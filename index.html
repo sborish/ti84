@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TI-84 Calculator</title>
+    <script src="path/to/your/hosted/secondPriorityLibs.bundle.js"></script>
+</head>
+<body>
+    <div id="calculator-container">
+        <!-- Calculator UI elements will go here -->
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initialize the calculator here
+            const calculator = new TI84Calculator({
+                containerId: 'calculator-container'
+            });
+
+            calculator.init();
+        });
+    </script>
+</body>
+</html>
